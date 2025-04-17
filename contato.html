@@ -7,15 +7,11 @@
     <title>GAMES CASTLE</title>
     <link rel="icon" href="imagens/icone.png">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="index.js">
-
-
 </head>
 
 <body>
     <header>
         <img src="logo.png" alt="logo" title="Castle Games" >
-
         <nav>
             <ul>
                 <li>
@@ -24,19 +20,15 @@
                 <li>
                     <a href="jogo.html" title="Sobre o jogo">Sobre o jogo</a>
                 </li>
-               
                 <li>
                     <a href="contato.html" title="Contato">Contato</a>
-                </li> 
+                </li>
                 <li>
-                  <a href="jogo2/index.html" title="Game" class="game" target="_blank">Game</a>
+                    <a href="game.html" title="Game" class="game">Game</a>
                 </li>
             </ul>
         </nav>
-
-
     </header>
-
 
     <main>
         <section class="sobre">
@@ -45,27 +37,24 @@
                     <span class="contato"><i class="fas fa-envelope"></i> Entre em Contato</span>
                 </h1>
 
-                <form name="formContato" method="post">
+                <form name="formContato" method="post" onsubmit="return validarFormulario()">
                     <label for="nome">Digite seu nome:</label>
-                    <input type="text" name="nome" id="nome" required>
-                    <br>
+                    <input type="text" name="nome" id="nome" required><br>
+
                     <label for="email">Digite seu e-mail:</label>
-                    <input type="text" name="email" id="email" required>
-                    <br>
+                    <input type="email" name="email" id="email" required><br>
+
                     <label for="mensagem">Mensage:</label>
-                    <textarea name="mensagem" id="mensagem" rows="10" required></textarea>
-                    <br>
+                    <textarea name="mensagem" id="mensagem" rows="10" required></textarea><br>
+
                     <button type="submit">
                         <i class="fas fa-check"></i>
                         Enviar Mensagem
                     </button>
                 </form>
-
             </div>
         </section>
-
-        
-
+    </main>
 
     <footer class="footer">
         <div class="container center">
@@ -79,14 +68,12 @@
                 <a href="#" title="Instagram">
                     <i class="fab fa-instagram"></i>
                 </a>
-
             </p>
             <p> Desenvolvido por Jenifer Santo </p>
-
-            
         </div>
     </footer>
-  
+
+    <script src="index.js"></script>
 </body>
 
 </html>
