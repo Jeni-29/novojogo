@@ -336,28 +336,142 @@ main {
 /*mobile*/
 
 
-@media(max-width: 420px) {
-    header-logo {
-        height: 400px;
+/*mobile*/
+
+@media(max-width: 460px){
+    /* Estilos gerais para o site */
+
+body{
+    padding-block:0;
+    margin:0;
+
+}
+    
+header {
+    background-color: rgb(255, 241, 241);
+    color:#fff;
+    padding-block: 30px 80px;
+    padding: 70px ;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+  
+}
+  
+
+
+.header-logo {
+    max-height: 100px;
+   
+  
+}
+
+nav ul {
+    list-style: none;
+    padding: 100px;
+    margin: -150px;
+    display:-webkit-inline-box
+}
+
+nav li {
+    margin-right: 40px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ddd;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+     background-color: rgb(27, 0, 0);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.grid {
+    text-align: center;
+}
+
+.grid h1 {
+    font-size: 4.5em;
+    color: #fff;
+    margin-bottom: 10px;
+    padding-left: 1px
+    
+}
+
+.grid p {
+    line-height: 1.6;
+    color: #fff;
+    padding-left: 1px
+}
+
+
+.btn1 {
+    display: inline-block;
+    background-color: #9C27B0;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.btn1:hover {
+    background-color: #fff;
+}
+
+.footer {
+    background-color: #fff;
+    color: #fff;
+    padding-block: 10px 10px;
+    text-align: center;
+    display: flex;
+}
+
+.footer .container {
+    padding: 0 30px;
+
+}
+
+    .footer{
         width: 100%;
-        padding-left: 100px;
+        height: 100%;
+        padding: 10px ;
+        padding-block: 10px 20px 30px;
+        padding-right: 30px;
+  
+    
+        
     }
 
+.footer img {
+    max-height: 400px;
+    margin-bottom: 100px;
+    padding-left: 20px;
+}
 
+.redes a {
+    color: #fff;
+    font-size: 1.5em;
+    margin: 0 10px;
+    text-decoration: none;
+}
 
-    ul {
-        list-style: none;
-
-        li {
-            text-align: center;
-
-            a {
-                color: #CCC;
-                text-decoration: none;
-                padding: 0px;
-                font-weight: bold;
-
-            }
-        }
-    }
+.redes a:hover {
+    color: #ddd;
+}
 }
