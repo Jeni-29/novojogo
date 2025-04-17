@@ -1,0 +1,363 @@
+* {
+    margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&family=Metamorphous&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Reggae+One&family=Roboto:ital,wght@0,100..900;1,100..900&family=Uncial+Antiqua&display=swap');
+
+
+body {
+    background-color: rgb(27, 0, 0);
+    color: rgb(255, 255, 255);
+
+}
+
+header {
+    background: rgb(255, 241, 241);
+    width: 100%;
+    height: 100px;
+    box-shadow: 0 0 40px #8a0049;
+
+}
+
+
+
+img {
+
+    width: 200px;
+    /* Define a largura por pixels */
+    height: 200px;
+    /* Define a altura por pixels */
+    float: left;
+    transform: scale(0.8);
+    /* Reduz a imagem para 50% do seu tamanho original */
+    margin-top: -50px;
+
+
+}
+
+
+/*roda-pe*/
+
+.footer {
+    background: rgb(255, 241, 241);
+    box-shadow: 0 0 40px #8a0049;
+    padding: 1px 0px;
+    margin-top: 5%;
+
+    img {
+        transform: scale(0.8);
+        width: 300px;
+        /* Define a largura por pixels */
+        height: 300px;
+        /* Define a altura por pixels */
+        float: none;
+    }
+
+    .redes {
+        a {
+            color: #ffffff;
+            font-size: 1.3em;
+            text-decoration: none;
+            margin-top: 100%;
+
+        }
+    }
+
+    P {
+        color: #000;
+        text-align: center;
+
+
+    }
+}
+
+/***/
+
+nav {
+    float: right;
+
+    ul {
+        list-style: none;
+        font-family: "Uncial Antiqua", system-ui;
+
+        li {
+            display: inline-block;
+            /* Faz os elementos ficar lado a lado */
+            margin: 35px;
+
+            /* Cria um espaço entre os elementos*/
+            a {
+                text-decoration: none;
+                /* Remove a decoração de texto padrão dos links, que geralmente é um sublinhado*/
+                color: black;
+                transition: 0.5s all;
+                /*Qualquer mudança de estilo (como a cor ao passar o mouse) ocorrerá gradualmente ao longo de 0.5 segundos.)*/
+            }
+
+            a:hover {
+                color: #9d0000;
+            }
+        }
+    }
+
+    .game {
+        background-color: #8a0049;
+        border-radius: 15px;
+        padding: 10px 20px;
+
+        &:hover {
+            color: #ffffff;
+            transition: 1s;
+        }
+    }
+}
+
+/*inicio do main*/
+
+.grid {
+    display: grid;
+    align-items: center;
+    margin: 50px;
+
+    p,
+    h1 {
+        margin: 20px;
+    }
+
+    h1,
+    h2 {
+        font-size: 100px;
+        font-family: "Eagle Lake", serif;
+        text-align: center;
+        margin: 15px;
+        letter-spacing: 0.1em;
+        text-shadow: 2px 2px 4px #ee1616;
+        /* Sombra simples */
+
+    }
+
+    h2 {
+        font-size: 50px;
+        letter-spacing: 0.1em;
+    }
+
+    p {
+        font-family: "Uncial Antiqua", system-ui;
+        font-size: 15px;
+        text-align: center;
+    }
+}
+
+.galeria {
+    box-shadow: 0 0 20px pink;
+    font-size: 55px;
+}
+
+
+
+.item {
+    text-align: center;
+    /* Opcional: Centraliza o texto e a imagem */
+    margin-bottom: 15px;
+    /* Opcional: Espaço entre os itens */
+}
+
+.item h1 {
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    /* Opcional: Espaço entre o texto e a imagem */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.item img {
+    display: block;
+    /* Força a imagem a ocupar a largura total e ir para a próxima linha */
+
+
+    height: auto;
+    /* Mantém a proporção */
+    margin: 0 auto;
+    /* Opcional: Centraliza a imagem horizontalmente */
+}
+
+.imagem {
+    display: flex;
+    /* Define o contêiner como um flex container */
+
+    align-items: center;
+    /* Centraliza as imagens horizontalmente */
+    /* align-items: flex-start; /* Alinha as imagens à esquerda */
+    /* align-items: flex-end; /* Alinha as imagens à direita */
+    vertical-align: top;
+
+
+}
+
+.imagem img {
+    width: 100%;
+    /* Faz a largura da imagem se ajustar à largura do contêiner `.imagem` */
+    margin: 15px;
+    height: auto;
+    /* Mantém a proporção da imagem enquanto a largura se ajusta */
+    display: block;
+    /* Remove qualquer espaçamento inline abaixo da imagem */
+    margin-bottom: 10px;
+    /* Opcional: Adiciona um espaço entre as imagens */
+    object-fit: cover;
+    /* Opcional: Recorta a imagem para preencher o tamanho definido em `height` */
+    /* height: 200px; /* Opcional: Define uma altura fixa para todas as imagens (use com `object-fit`) */
+}
+
+.cenario {
+    width: 90%;
+    margin: 15px;
+    height: auto;
+}
+
+.logo {
+    background-color: #FFF;
+    border-radius: 20px;
+}
+
+
+
+
+
+
+
+/*sobre o jogo*/
+
+section {
+    h1 {
+        font-size: 75px;
+        font-family: "Eagle Lake", serif;
+        text-align: center;
+        margin: 20px;
+    }
+
+}
+
+.sprite {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-shadow: 0 0 40px #8a0049;
+    text-align: justify;
+    text-align: center;
+    padding: 20px;
+    margin: 35px;
+    border-radius: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    transition: 0.5s all;
+
+}
+
+a:hover {
+    color: #9d0000;
+}
+
+.game {
+    background-color: #8a0049;
+    border-radius: 15px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 35px;
+
+
+    &:hover {
+        color: #ffffff;
+        transition: 1s;
+    }
+}
+
+/*contato*/
+h1 {
+    text-align: center;
+}
+
+input,
+textarea,
+label {
+    width: 50%;
+    margin: 15px auto;
+    border: 2px solid #ffffff;
+    border-radius: 10PX;
+    padding: 5px;
+    display: block;
+
+}
+
+label {
+    text-align: center;
+}
+
+.contato {
+    font: 26px "Lilita One", ;
+    color: #FFF;
+    background: #8a0049;
+    margin: 25px;
+    padding: 10px;
+    line-height: 50px;
+
+}
+
+
+
+.btn,
+button {
+    background: #8a0049;
+    color: #FFF;
+    text-decoration: none;
+    font: 20px "times";
+    padding: 10px;
+    border: 0;
+    display: block;
+    margin: 15px auto;
+}
+
+main {
+    section {
+        padding: 50px 0;
+    }
+
+    .sobre {
+        iframe {
+            width: 100%;
+            height: 300px;
+            margin: 50px 0;
+        }
+    }
+}
+
+/*mobile*/
+
+
+@media(max-width: 420px) {
+    header-logo {
+        height: 400px;
+        width: 100%;
+        padding-left: 100px;
+    }
+
+
+
+    ul {
+        list-style: none;
+
+        li {
+            text-align: center;
+
+            a {
+                color: #CCC;
+                text-decoration: none;
+                padding: 0px;
+                font-weight: bold;
+
+            }
+        }
+    }
+}
